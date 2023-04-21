@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap');
+*{
+    background-color: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1681269444719-452fe2401a51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8aVVJc25WdGpCMFl8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60");
+    background-repeat: fill;
+}
+
+main h1{
+    display: flex;
+    justify-content: center;
+    color: green;
+    font-size: 50px;
+}
+header{
+    /* background-color: rgb(238, 74, 202); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header .header-logo{
+    height: 20vh;
+   /* padding: 1%; */
+   margin: 1%;
+   border-radius: 20%;
+   }
+header .header-nav{
+    width: 40vw;
+}
+header .header-nav a{
+    text-decoration: none;
+    padding: 0vw 2vw 0vw 2vw;
+}
+
+.cardimg{
+    width: 30vw;
+}
+#imgCardArea{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.imgCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    border-radius: 10%;
+
+}
+.cardimg{
+    height: 80vh;
+}
+.imgCard:hover .cardimg{
+    opacity: 0.5;
+    justify-content: center;
+    align-content: center;
+}
+.imgCard:hover .hover-part{
+    visibility: visible;
+}
+.hover-part{
+    position: absolute;
+    transform: translate(0%, 300%);
+    visibility: hidden;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh;
+}
+footer .icon i{
+ padding: 1em;
+}
